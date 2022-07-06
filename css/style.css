@@ -1,0 +1,65 @@
+:root {
+  --bg-login-main: #3aaaff;
+  --bg-login-light: #90e5ff;
+  --bg-feed-description: rgba(183, 181, 190, 0.7);
+  --bg-button-grey: #6497b1;
+  --text-title-white: #ffffff;
+  --text-title-grey: #2a4d69;
+  --text-title-black: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--bg-login-main);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.75rem;
+  margin-bottom: 44px;
+}
+
+.figure__image {
+  width: 110px;
+  height: 110px;
+}
+
+.figure__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+
+  color: #000000;
+}
+
+img {
+  max-width: 110px;
+}
+
+.login {
+  background-color: var(--bg-login-light);
+  border: solid 1px #fff;
+  border-radius: 40px;
+}
