@@ -14,6 +14,10 @@ body {
   z-index: 100;
   top: 0;
   overflow: hidden;
+  opacity: 0;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.15s;
 }
 
 .modal__content {
@@ -27,7 +31,11 @@ body {
   background-color: #f1f1f1;
   border-radius: 20px;
   margin: 5px;
+}
 
+.modal-show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .closed {
@@ -92,7 +100,6 @@ body {
   border: 10px solid #fff;
   width: 70%;
   height: 100%;
-  
 }
 
 .content__post {
@@ -108,7 +115,6 @@ body {
   margin-bottom: 30px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 10px 10px 0 10px;
-
 }
 
 .content__post span {
@@ -141,7 +147,7 @@ textarea:focus {
 }
 
 textarea::after {
-  background-image: url('../assets/icon/icon-post.svg');
+  background-image: url("../assets/icon/icon-post.svg");
   background-color: #cccccc;
 }
 
@@ -179,13 +185,11 @@ textarea::after {
     right: 10px;
     top: 0px;
   }
-
 }
 
 @media screen and (min-width: 768px) {
   .modal__content {
     width: 50%;
-
   }
   .title {
     display: flex;
