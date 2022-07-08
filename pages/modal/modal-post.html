@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal - iPet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/modal-post.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal-post">
+        <div class="modal__content container">
+          <div class="title">
+            <h1 class="title__name">Criar Publicação</h1>
+            <div class="closed">
+              <img src="../../assets/icon/closed.svg" alt="" />
+            </div>
+          </div>
+          <div class="header__profile">
+            <div class="image__profile">
+              <img src="../../assets/img/icon-dog.svg" alt="" />
+            </div>
+
+            <div class="info__profile">
+              <div class="line-detail"></div>
+              <h3 class="name__profile">@profile</h3>
+            </div>
+          </div>
+          <div class="image__upload"></div>
+          <div class="form_post">
+            <form action="">
+              <div class="content__post">
+                <textarea
+                  name="coment"
+                  id="coment"
+                  cols="30"
+                  rows="3"
+                  placeholder="Insira seu comentário da postagem"
+                ></textarea>
+                <img src="../../assets/img/icon-post-img.svg" alt="" />
+              </div>
+              <button class="btn-post">Publicar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

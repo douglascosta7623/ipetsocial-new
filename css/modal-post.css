@@ -1,0 +1,157 @@
+body {
+  background-color: #010101 !important;
+}
+
+.modal-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.title {
+  display: none;
+}
+
+.modal__content {
+  margin-top: -100px;
+  width: 100%;
+  height: max-content;
+  background-color: #f1f1f1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.header__profile {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px 0;
+  margin-bottom: 5px;
+}
+
+.image__profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.image__profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.line-detail {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 0.5rem;
+}
+
+.name__profile {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.875rem;
+
+  color: #000000;
+}
+
+.image__upload {
+  width: 100%;
+  height: 150px;
+  border-top: 20px solid #fff;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  border-radius: 7px 7px 0 0;
+}
+
+.content__post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 0 0 7px 7px;
+  border-top: none;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+  border-bottom: 20px solid #fff;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  resize: none !important;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.btn-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #6497b1;
+  border-radius: 10px;
+  padding: 15px 0;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__content {
+    margin-top: 200px;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #acacac;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+
+  .title__name {
+    margin-bottom: 0;
+  }
+
+  .closed {
+    align-self: flex-end !important;
+    margin-right: 0;
+    position: absolute;
+    right: 20px;
+  }
+  .closed img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header__profile {
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .image__upload {
+    height: 250px;
+  }
+}
