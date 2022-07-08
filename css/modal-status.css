@@ -1,14 +1,35 @@
+body {
+  background: #1e1e1e;
+}
+
 .box__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  max-width: 711px;
+}
+
+.message__container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
 }
 
 .message__content {
   background-color: var(--bg-login-main);
   width: 100%;
-  max-width: 711px;
+  max-width: 550px;
+
   padding: 65px 20px 45px 20px;
   display: flex;
   gap: 1.5rem;
@@ -16,16 +37,22 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  overflow: hidden;
 }
 
+.modal-show {
+  opacity: 1;
+  pointer-events: auto;
+}
 .message__title {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 38px;
   text-align: center;
 
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .message__icon {
@@ -45,4 +72,19 @@
   line-height: 18px;
 
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .message__title {
+    font-size: 24px;
+  }
+
+  .message__container {
+    padding-left: initial;
+    padding-right: initial;
+  }
+
+  .message__button {
+    font-size: 20px;
+  }
 }
