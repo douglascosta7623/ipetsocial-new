@@ -49,17 +49,6 @@ body {
 }
 
 @media screen and (min-width: 576px) {
-  .menu {
-    top: 0;
-    height: 100px;
-  }
-
-  .menu__content {
-    justify-content: end;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  
   .image__post .card__description {
     width: 85%;
     margin-left: 60px;
@@ -72,11 +61,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .menu__content {
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-
   .image__post .card__description {
     width: 80%;
   }
