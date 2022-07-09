@@ -1,3 +1,67 @@
 body {
   background: var(--bg-body-loged);
 }
+
+.main__images {
+  z-index: 0;
+}
+
+.image__post img {
+  width: 100%;
+  height: 95vh;
+}
+
+.image__post {
+  display: flex;
+  align-items: center;
+}
+
+.image__post .card__description {
+  position: absolute;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.image__post
+.card__description
+.card__description__profile {
+  background: rgba(183, 181, 190, 0.7);
+  border-radius: 40px;
+  padding: 10px;
+  max-width: 410px;
+  min-height: 250px;
+}
+
+.card__description h2 {
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card__description, p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 576px) {
+  .image__post .card__description {
+    width: 85%;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .card__description {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image__post .card__description {
+    width: 80%;
+  }
+}
