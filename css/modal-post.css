@@ -24,7 +24,6 @@ html {
   flex-direction: column;
   width: 95%;
   padding: 20px;
-  min-height: 600px;
   background-color: #f1f1f1;
   border-radius: 20px;
   margin: 20px;
@@ -88,16 +87,20 @@ html {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 300px;
   border-radius: 7px 7px 0 0;
 }
 
 .image__upload {
   border: 10px solid #fff;
-  width: 70%;
-  height: 100%;
-
+  width: 70%;  
+  min-height: 220px;
+  padding: 5px;
 }
+
+.image__upload img {
+  width: 100%;
+}
+
 
 .content__post {
   display: flex;
@@ -105,7 +108,6 @@ html {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 10px;
   background: #ffffff;
   border-radius: 7px;
   padding: 10px 0;
@@ -138,7 +140,7 @@ textarea {
   display: block;
   border: none;
   resize: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 textarea:focus {
@@ -146,23 +148,21 @@ textarea:focus {
 }
 
 .btn-post {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
   background: #6497b1;
   border-radius: 30px;
-  padding: 15px 0;
+  padding: 8px 0;
   width: 200px;
   margin: 0 auto;
-  text-align: center;
 
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
   color: #fff;
 }
+
+.btn-post:hover {
+  background: #709cb3;
+  color: #fff;
+}
+
 
 .count__comment img {
   width: 40px;
@@ -204,7 +204,7 @@ textarea:focus {
 
   .title__name {
     margin-bottom: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .header__profile {
@@ -213,10 +213,11 @@ textarea:focus {
   }
 
   .image__upload {
-    width: 50%;
-    height: 250px;
+    width: 30%;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
   }
-
   .btn-post {
     width: 300px;
   }
