@@ -153,8 +153,8 @@ textarea:focus {
   padding: 8px 0;
   width: 200px;
   margin: 0 auto;
-
-  font-weight: 700;
+  border: none;
+  font-weight: 500;
   color: #fff;
 }
 

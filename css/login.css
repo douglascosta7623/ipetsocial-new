@@ -94,6 +94,11 @@ a {
   border: red;
 }
 
+.row {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 @media screen and (min-width: 768px) {
   .figure {
     height: 100%;
@@ -129,7 +134,7 @@ a {
   }
 
   .login__header {
-    align-items: flex-start
+    align-items: flex-start;
   }
 
   .login__logo {
@@ -142,7 +147,5 @@ a {
     height: 5px;
     background-color: #005b96;
     margin-left: 0;
-  }
-
-    
+  }    
 }

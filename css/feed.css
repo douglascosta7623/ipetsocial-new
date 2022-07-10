@@ -8,18 +8,22 @@ body {
 
 .image__post img {
   width: 100%;
-  height: 95vh;
+  height: 92vh;
+  object-fit: cover;
 }
 
 .image__post {
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 
 .image__post .card__description {
   position: absolute;
   width: 100%;
   margin-top: 10%;
+  color: #383737;
+  font-weight: 500;
 }
 
 .image__post
@@ -37,6 +41,7 @@ body {
   margin-top: 0;
   display: flex;
   justify-content: center;
+  font-size: 1.5rem;
 }
 
 .card__description, p {
@@ -44,8 +49,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  color: #ffffff;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 576px) {
@@ -53,6 +57,7 @@ body {
     width: 85%;
     margin-left: 60px;
     margin-right: 60px;
+    
   }
 
   .card__description {

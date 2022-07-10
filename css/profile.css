@@ -1,5 +1,6 @@
 body {
   background: var(--bg-body-loged);
+  overflow-y: auto;
 }
 
 .profile {
