@@ -20,19 +20,18 @@
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/feed.css" />
-    <link rel="stylesheet" href="../../css/modal-post.css" />
   </head>
   <body>
     <div class="container-fluid">
       <nav class="nav nav-pills nav-fill menu">
         <div class="menu__content">
           <div class="nav-border">
-            <a href="/pages/feed.html">
+            <a href="/pages/profile.html">
               <img src="../assets/icon/icon-profile.svg" alt="Icone do Perfil">
             </a>      
           </div>
           <div class="nav-border">
-            <a href="#">
+            <a href="#" id="open__modal">
               <img src="../assets/icon/icon-post.svg" alt="Adicionar uma nova postagem">
             </a>
           </div>
@@ -78,51 +77,9 @@
       </main>
 
       <!-- Modal de cadastro -->
-      <div class="modal-post">
-        <div class="modal__content">
-          <div class="row">
-            <div class="col-md-12 title">
-              <h1 class="title__name">Criar Publicação</h1>
-              <div class="closed">
-                <img src="../assets/icon/closed.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="header__profile">
-            <div class="image__profile">
-              <img src="../assets/icon/icon-dog.svg" alt="" />
-            </div>
-
-            <div class="info__profile">
-              <div class="line-detail"></div>
-              <h3 class="name__profile">@Profile</h3>
-            </div>
-          </div>
-          <div class="box__image">            
-            <div class="image__upload"></div>
-          </div>
-          <div class="form_post">
-            <form action="">
-              <div class="content__post">
-                <textarea
-                  name="coment"
-                  id="coment"
-                  cols="30"
-                  rows="3"
-                  placeholder="Insira seu comentário da postagem"
-                ></textarea>
-                  
-                <div class="d-flex justify-content-between align-items-center w-100 count__comment">
-                  <span>0/100</span>
-                  <img src="../assets/icon/icon-post-img.svg" alt="" class="img-thumbnail"/>
-                </div>
-              </div>
-              <button class="btn-post">Publicar</button>
-            </form>
-          </div>
-        </div>
-      </div>
+      <div class="modal-post" id="is-visible"></div>
     </div>
     <script src="../js/profile.js"></script>
+    <script src="../js/modal-post.js"></script>
   </body>
 </html>

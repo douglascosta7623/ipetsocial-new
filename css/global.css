@@ -13,10 +13,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container-fluid {
-  padding: 0;
-}
-
-.col-reset {
+.container-fluid, .col-reset {
   padding: 0;
 }
