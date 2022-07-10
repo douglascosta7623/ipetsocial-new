@@ -20,7 +20,9 @@
 		</div>
 	</div>
 	<div class="box__image">
-		<div class="image__upload"></div>
+		<div class="image__upload">
+			<img src="../assets/icon/icon-dog.svg" alt="" />
+		</div>
 	</div>
 	<div class="form_post">
 		<form action="">
@@ -29,7 +31,7 @@
 					name="coment"
 					cols="30"
 					rows="3"
-          onkeyup="counter(event)"
+          onkeyup="counterNumberCharacters(event)"
 					placeholder="Insira seu comentário da postagem"
 				></textarea>
 
@@ -39,10 +41,12 @@
 				<div class="counter">
 					<small id="add">0</small>/<span>100</span>
 				</div>
+					<input hidden type="file" name="file" class="teste">
 					<img
 						src="../assets/icon/icon-post-img.svg"
 						alt=""
 						class="img-thumbnail"
+						onclick="selectedFile()"
 					/>
 				</div>
 			</div>

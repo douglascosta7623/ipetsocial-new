@@ -18,9 +18,14 @@ if (closed) {
 	});
 }
 
-function counter(event) {
+function counterNumberCharacters(event) {
 	const add = document.querySelector("#add");
 	add.innerHTML = event.target.value.length
+}
+
+function selectedFile() {
+	const file = document.querySelector('.teste').click()
+	// console.log('clicou', file.click())
 }
 
 function toggleModal(e) {
