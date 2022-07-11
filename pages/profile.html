@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfil - iPet</title>
-    <!-- Font -->
+    <title>Feed - iPet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,26 +15,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     />
-    <!-- Style -->
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link rel="stylesheet" href="../css/profile.css" />
-    <link rel="stylesheet" href="../../css/modal-post.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid d-flex flex-wrap justify-content-center">
       <nav class="nav nav-pills nav-fill menu">
         <div class="menu__content">
           <div class="nav-border">
             <a href="/pages/feed.html">
-              <img
-                src="../assets/icon/icon-profile.svg"
-                alt="Icone do Perfil"
-              />
+              <img src="../assets/icon/home.svg" alt="Icone do Perfil" />
             </a>
           </div>
           <div class="nav-border">
-            <a class="open__modal" href="#">
+            <a href="#" id="open__modal">
               <img
                 src="../assets/icon/icon-post.svg"
                 alt="Adicionar uma nova postagem"
@@ -44,119 +38,151 @@
           </div>
         </div>
       </nav>
-      <main class="main__images">
-        <div class="card image__post">
-          <img src="../assets/img/feed-main.png" alt="Icone do Perfil" />
-          <div class="card__description">
-            <div class="card__description__profile">
-              <h2>@Profile</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, a
-                similique aliquid aspernatur ab, tempore consequuntur corrupti
-                qui, impedit ipsa officia eveniet? Perspiciatis esse tempora
-                aspernatur delectus dolorum deserunt quaerat!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card image__post">
-          <img src="../assets/img/pet-post-01.png" alt="Icone do Perfil" />
-          <div class="card__description">
-            <div class="card__description__profile">
-              <h2>@Profile</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, a
-                similique aliquid aspernatur ab, tempore consequuntur corrupti
-                qui, impedit ipsa officia eveniet? Perspiciatis esse tempora
-                aspernatur delectus dolorum deserunt quaerat!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card image__post">
-          <img src="../assets/img/pet-post-02.png" alt="Icone do Perfil" />
-          <div class="card__description">
-            <div class="card__description__profile">
-              <h2>@Profile</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, a
-                similique aliquid aspernatur ab, tempore consequuntur corrupti
-                qui, impedit ipsa officia eveniet? Perspiciatis esse tempora
-                aspernatur delectus dolorum deserunt quaerat!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card image__post">
-          <img src="../assets/img/pet-post-03.png" alt="Icone do Perfil" />
-          <div class="card__description">
-            <div class="card__description__profile">
-              <h2>@Profile</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, a
-                similique aliquid aspernatur ab, tempore consequuntur corrupti
-                qui, impedit ipsa officia eveniet? Perspiciatis esse tempora
-                aspernatur delectus dolorum deserunt quaerat!
-              </p>
-            </div>
-          </div>
-        </div>
-      </main>
 
-      <!-- Modal de cadastro -->
-      <div class="modal-post">
-        <div class="modal__content">
-          <div class="row">
-            <div class="col-md-12 title">
-              <h1 class="title__name">Criar Publicação</h1>
-              <div class="closed">
-                <img src="../assets/icon/closed.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="header__profile">
-            <div class="image__profile">
-              <img src="../assets/icon/icon-dog.svg" alt="" />
-            </div>
+      <div class="profile">
+        <div class="profile__img">
+          <img src="../assets/img/img-profile.svg" alt="" />
+          <small>@Profile</small>
+        </div>
+        <div
+          class="text-center profile__paragraph border-bottom border-info p-2"
+        >
+          <span>Minhas publicações</span>
+        </div>
+      </div>
 
-            <div class="info__profile">
-              <div class="line-detail"></div>
-              <h3 class="name__profile">@Profile</h3>
-            </div>
-          </div>
-          <div class="box__image">
-            <div class="image__upload"></div>
-          </div>
-          <div class="form_post">
-            <form action="">
-              <div class="content__post">
-                <textarea
-                  name="coment"
-                  id="coment"
-                  cols="30"
-                  rows="3"
-                  placeholder="Insira seu comentário da postagem"
-                ></textarea>
-
-                <div
-                  class="d-flex justify-content-between align-items-center w-100 count__comment"
-                >
-                  <span>0/100</span>
-                  <img
-                    src="../assets/icon/icon-post-img.svg"
-                    alt=""
-                    class="img-thumbnail"
-                  />
+      <div class="content">
+        <div class="row">
+          <div class="col col-md-6 p-1">
+            <div class="image__post">
+              <img
+                src="../assets/img/pet-post-01.png"
+                class="img-fluid"
+                alt="Icone do Perfil"
+              />
+              <div class="card__description">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  a similique aliquid aspernatur ab, tempore consequuntur
+                  corrupti qui, impedit ipsa officia eveniet? Perspiciatis esse
+                  tempora aspernatur delectus dolorum deserunt quaerat!
+                </p>
+                <div class="text-center created__at">
+                  <span>Data da criação: <small>10/08/2022</small></span>
                 </div>
               </div>
-              <button class="btn-post">Publicar</button>
-            </form>
+            </div>
+          </div>
+          <div class="col col-md-6 p-1">
+            <div class="image__post">
+              <img
+                src="../assets/img/pet-post-02.png"
+                class="img-fluid"
+                alt="Icone do Perfil"
+              />
+              <div class="card__description">
+                <p>
+                  <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, a
+									similique aliquid aspernatur ab, tempore consequuntur corrupti
+									qui, impedit ipsa officia eveniet? Perspiciatis esse tempora
+									aspernatur delectus dolorum deserunt quaerat! -->
+                </p>
+                <div class="text-center created__at">
+                  <span>Data da criação: <small>10/08/2022</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-sm-12 col-md-6 p-1">
+            <div class="image__post">
+              <img
+                src="../assets/img/pet-post-03.png"
+                class="img-fluid"
+                alt="Icone do Perfil"
+              />
+              <div class="card__description">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  a similique aliquid aspernatur ab, tempore consequuntur
+                  corrupti qui, impedit ipsa officia eveniet? Perspiciatis esse
+                  tempora aspernatur delectus dolorum deserunt quaerat!
+                </p>
+                <div class="text-center created__at">
+                  <span>Data da criação: <small>10/08/2022</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-6 p-1">
+            <div class="image__post">
+              <img
+                src="../assets/img/pet-post-04.png"
+                class="img-fluid"
+                alt="Icone do Perfil"
+              />
+              <div class="card__description">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  a similique aliquid aspernatur ab, tempore consequuntur
+                  corrupti qui, impedit ipsa officia eveniet? Perspiciatis esse
+                  tempora aspernatur delectus dolorum deserunt quaerat!
+                </p>
+                <div class="text-center created__at">
+                  <span>Data da criação: <small>10/08/2022</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-sm-12 col-md-6 p-1">
+            <div class="image__post">
+              <img
+                src="../assets/img/pet-post-02.png"
+                class="img-fluid"
+                alt="Icone do Perfil"
+              />
+              <div class="card__description">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  a similique aliquid aspernatur ab, tempore consequuntur
+                  corrupti qui, impedit ipsa officia eveniet? Perspiciatis esse
+                  tempora aspernatur delectus dolorum deserunt quaerat!
+                </p>
+                <div class="text-center created__at">
+                  <span>Data da criação: <small>10/08/2022</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-6 p-1">
+            <div class="image__post">
+              <img
+                src="../assets/img/pet-post-01.png"
+                class="img-fluid"
+                alt="Icone do Perfil"
+              />
+              <div class="card__description">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  a similique aliquid aspernatur ab, tempore consequuntur
+                  corrupti qui, impedit ipsa officia eveniet? Perspiciatis esse
+                  tempora aspernatur delectus dolorum deserunt quaerat!
+                </p>
+                <div class="text-center created__at">
+                  <span>Data da criação: <small>10/08/2022</small></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Modal de cadastro -->
+      <div class="modal-post" id="is-visible"></div>
     </div>
-    <script src="../js/profile.js"></script>
-    <script src="../../js/modal-post.js
-    "></script>
+    <script src="../js/modal-post.js"></script>
   </body>
 </html>

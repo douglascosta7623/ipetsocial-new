@@ -1,7 +1,7 @@
 :root {
   --bg-login-main: #3aaaff;
   --bg-login-light: #90e5ff;
-  --bg-body-loged: #E7EFF6;
+  --bg-body-loged: #e7eff6;
   --bg-feed-description: rgba(183, 181, 190, 0.7);
   --bg-button-grey: #6497b1;
   --text-title-white: #ffffff;
@@ -13,10 +13,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container-fluid {
-  padding: 0;
-}
-
+.container-fluid,
 .col-reset {
   padding: 0;
 }

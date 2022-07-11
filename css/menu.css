@@ -23,9 +23,8 @@
   border-radius: 50%;
   padding: 8px;
   background: rgba(231, 239, 246, 0.6);
-  margin: 0 12px
+  margin: 0 12px;
 }
-
 
 @media screen and (min-width: 576px) {
   .menu {
@@ -38,7 +37,6 @@
     margin-left: 60px;
     margin-right: 60px;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -46,5 +44,4 @@
     margin-left: 150px;
     margin-right: 150px;
   }
-
 }
