@@ -40,6 +40,5 @@ function toggleModal(e) {
 async function loadModal() {
 	const request = await fetch("../pages/modal/modal-post.html");
 	const modal = await request.text();
-	console.log(modal)
 	modalPost.innerHTML = modal;
 }
